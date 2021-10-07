@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Judah_iBook</string>
+    <string name="onboarding_text">Reading is a conversation. All book’s talk but a good book listens as well.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="readyToGo">You’re all set and ready to starting your favorite books.</string>
+</resources>

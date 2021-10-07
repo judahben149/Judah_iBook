@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.judah_ibook.OnboardingFragment"
+        android:label="fragment_onboarding2"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/navigateToSignInFragment"
+            app:destination="@id/signInFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment2"
+        android:name="com.example.judah_ibook.SignInFragment2"
+        android:label="fragment_sign_in2"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/navigateToSignUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/navigateToSecondSplashScreenFragment"
+            app:destination="@id/splashScreen2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.judah_ibook.SignUpFragment"
+        android:label="fragment_sign_up2"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/navigateToSecondSplashScreenFragment2"
+            app:destination="@id/splashScreen2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen2Fragment"
+        android:name="com.example.judah_ibook.SplashScreen2Fragment"
+        android:label="fragment_splash_screen3"
+        tools:layout="@layout/fragment_splash_screen2" />
+</navigation>
